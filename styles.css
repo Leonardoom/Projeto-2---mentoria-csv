@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    color: #323232
+}
+
+body {
+    background-image: url("./img/background-novo.jpg");
+    background-size: cover;
+}
+
+textarea:focus input:focus {
+    outline: none;
+}
+a {
+    font-size: .8rem;
+}
+
+a:hover{
+    color: aqua;
+}
+
+#login-container {
+    background-color: white;
+    width: 350px;
+    margin-left: auto; /* para manter o arquivo centralizado a tela */
+    margin-right: auto; /* para manter o arquivo centralizado a tela */
+    text-align: center; 
+    padding: 20px 25px; /* 20 px nas laterais e 25px em cima e embaixo*/
+    margin-top: 25vh;  /* vh = para o container começar a 10% da altura da tela*/ 
+    border-radius: 10px;
+}
+
+form {
+    margin-top: 30px; /* abrir espaço no formulario */
+    margin-bottom: 40px;
+}
+
+label /*etiquetas (e-mail// senha) */, input {
+    display: block; /* vai ocupar 100% da largura do container e ficar um em cima do outro .... CADA INPUT NA SUA LINHA*/
+    width: 100% /* largura total do container */;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    font-size: .9rem; /* Tamanho de fonte que se adapta ao tamanho do layou -- Desktop ou Celular*/
+}
+
+input {
+    border-bottom: 2px #323232 solid; /*fazer a borda envolta do input e sublinhar a borda (solid) */
+    padding: 10px;
+    margin-bottom: 20px; /* Afastar os inputs um do outro */ 
+    font-size: 0.9rem;
+}
+
+input:focus {
+    border-bottom: 1px solid; color: yellow; /* sublinhar o input / dar cor (amarelo) ao selecionar o input para incluir conteudo */
+}
+
+#esqueci-minha-senha {
+    display: block; /* com função de retirar o display inline do <a> , para poder movimentar o conteudo dentro do container (text-align) */
+    text-align: right; 
+    font-size: 0.7rem;
+    margin: 10px;
+}
+
+input[type ="submit"] {
+    text-align: center;
+    display: block; /* liberar o text align do input */ 
+    background-color: blue; /* cor de fundo do botao */ 
+    border-radius: 15px; /*arredondar a borda do botao */ 
+    /* text-transform: uppercase;  todas as letras em maiusculo --- NÃO VOU USAR , FICOU FEIO */
+    border: none;
+    height: 40px;
+
+}
+
+input[value = "Entrar"] {
+    font-weight: bold;
+    color: white;
+}
