@@ -30,7 +30,7 @@ a:hover{
     margin-right: auto; /* para manter o arquivo centralizado a tela */
     text-align: center; 
     padding: 20px 25px; /* 20 px nas laterais e 25px em cima e embaixo*/
-    margin-top: 25vh;  /* vh = para o container começar a 10% da altura da tela*/ 
+    margin-top: 10vh;  /* vh = para o container começar a 10% da altura da tela*/ 
     border-radius: 10px;
 }
 
@@ -65,7 +65,8 @@ input:focus {
     display: block; /* com função de retirar o display inline do <a> , para poder movimentar o conteudo dentro do container (text-align) */
     text-align: right; 
     font-size: 0.7rem;
-    margin: 10px;
+    margin: 15px;
+    font-weight: bold;
 }
 
 input[type ="submit"] {
@@ -75,11 +76,57 @@ input[type ="submit"] {
     border-radius: 15px; /*arredondar a borda do botao */ 
     /* text-transform: uppercase;  todas as letras em maiusculo --- NÃO VOU USAR , FICOU FEIO */
     border: none;
-    height: 40px;
+    height: 35px;
+    cursor: pointer; /* Faz com que apareça a mãozinha no link , que maior impressao de botao */
+ 
 
 }
 
 input[value = "Entrar"] {
     font-weight: bold;
     color: white;
+}
+
+input[type ="submit"]:hover /* Efeito ao passar o mouse por cima do botão */{ 
+    background-color:midnightblue; /*cor de fundo do botao ao passar o mouse por cima */
+    transition: 0.5s; 
+}
+
+/* REDES SOCIAIS */ 
+
+#social-container, .paragrafo-social {
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+
+i {
+    display: block;
+    text-align: center;
+    background-color: blue;
+    padding: 13px;
+    margin: 10px;
+    border-radius: 50%;
+    width: 40px; /* Largura */
+    height: 40px; /* Altura */
+    /* line-height: 40px; ----- TAMBÉM PODE SER UTILIZADO PARA CENTRALIZAR OS ICONES AO CENTRO COM O MESMO TAMANHO DA LARGURA E ALTURA */
+    color: white;
+    cursor: pointer;/* Da aspecto de botão no icone */
+
+}
+.fa-facebook-f {
+    color: white;
+    background-color: #3b5998
+}
+
+.novo-paragrafo {
+    margin: 10px;
+}
+
+.assinatura {
+    color: white;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    
+
 }
